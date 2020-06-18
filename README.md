@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Challenge: "Image Carousel"
 
-## Available Scripts
+## Challenge Overview
 
-In the project directory, you can run:
+Make a website which allows the user to navigate a set of images (first manually, then with an auto-playing slideshow).
 
-### `yarn start`
+[Try this live demo!](https://cyf-image-carousel.netlify.app/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Level 1 Challenge
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Make forward and back buttons to move _manually_ in that direction through a list of at least 4 images.
 
-### `yarn test`
+(e.g. When the user presses forward once, the display should move ONCE to the next image.)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can use any images.
 
-### `yarn build`
+You can store the images within your app or you can use links to images hosted elsewhere ("hotlinking").
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Unsplash](https://unsplash.com/) is a good source of images for this challenge.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Level 1 challenge screenshot example.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Example Screenshot](./example-screenshots/example-level1.png)
 
-### `yarn eject`
+## Level 2 Challenge
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Make auto-forward and auto-back buttons to _automatically_ move in that direction through the list of images.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Here's a screenshot example from a completed level 2 challenge.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Example Screenshot](./example-screenshots/example-level2.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Try to finish the rest by yourself
 
-## Learn More
+If you want a harder challenge, don't read the rest of this document but instead try to build the app by yourself.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you want hints, then you will find some below.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Suggested approach
 
-### Code Splitting
+Here's one approach you might take to building this app.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Task: Design your layout _on paper_
 
-### Analyzing the Bundle Size
+Design your layout on paper. Keep it very simple - this is a JavaScript challenge, not a CSS challenge.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Use a layout that will be ok on a phone (but _don't_ spend time on responsive design).
 
-### Making a Progressive Web App
+Keep this drawing around for reference later.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### Task: Convert your layout to HTML
 
-### Advanced Configuration
+Convert the drawing to HTML (on codepen or elsewhere) and check the buttons appear correctly.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+_DON'T_ add any CSS or extra markup to make it look good just now. That will only make it more difficult for you to think about your app during development.
 
-### Deployment
+#### Task: Make the buttons work
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Make your buttons work to navigate forwards and backwards, manually.
 
-### `yarn build` fails to minify
+### Task: more buttons - automated slideshow
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Add the following buttons:
+
+- auto-forward
+- stop
+- auto-backwards
+
+These should allow automatic navigation through the images, say every 5 seconds.
+
+### End of basic challenge!
+
+Congratulations, you've finished the basics!
+
+- Make sure you can access it and play with it on a smartphone!
+- Celebrate!
+
+# Extra Task for Slideshow
+
+## Optional: Add UI for delay time
+
+Add UI so that the user can specify how long to wait between images.
+
+## Advanced Challenge: Make it look good
+
+Now is a good time to make it look good with CSS, colour, typography, images, and creativity. Maybe you could ask someone to collaborate with you on those aspects.
